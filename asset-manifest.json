@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/goit-react-hw-01-components-styled-components-emotion/static/css/main.7acaea2f.css",
-    "main.js": "/goit-react-hw-01-components-styled-components-emotion/static/js/main.07d3183d.js",
+    "main.css": "/goit-react-hw-01-components-styled-components-emotion/static/css/main.940af96b.css",
+    "main.js": "/goit-react-hw-01-components-styled-components-emotion/static/js/main.39ab8760.js",
+    "static/media/profile.jpg": "/goit-react-hw-01-components-styled-components-emotion/static/media/profile.a738d80846263b22f36d.jpg",
     "index.html": "/goit-react-hw-01-components-styled-components-emotion/index.html",
-    "main.7acaea2f.css.map": "/goit-react-hw-01-components-styled-components-emotion/static/css/main.7acaea2f.css.map",
-    "main.07d3183d.js.map": "/goit-react-hw-01-components-styled-components-emotion/static/js/main.07d3183d.js.map"
+    "main.940af96b.css.map": "/goit-react-hw-01-components-styled-components-emotion/static/css/main.940af96b.css.map",
+    "main.39ab8760.js.map": "/goit-react-hw-01-components-styled-components-emotion/static/js/main.39ab8760.js.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
-    "static/js/main.07d3183d.js"
+    "static/css/main.940af96b.css",
+    "static/js/main.39ab8760.js"
   ]
 }
