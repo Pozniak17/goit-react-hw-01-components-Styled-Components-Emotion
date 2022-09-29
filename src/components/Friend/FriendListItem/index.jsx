@@ -1,5 +1,3 @@
-// import style from './style.module.css';
-
 import {
   Item,
   FriendsStatus,
