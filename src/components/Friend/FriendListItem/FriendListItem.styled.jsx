@@ -23,17 +23,20 @@ export const FriendsStatus = styled.span`
   background-color: green;
   border-radius: 12px;
 
-  background-color: ${props => {
-    switch (props.status) {
-      case true:
-        return 'green';
-      case false:
-        return 'red';
-      default:
-        return '#000';
-    }
-  }};
+  background-color: ${props => setStatusColor};
 `;
+
+// функція зміни кольору
+const setStatusColor = props => {
+  switch (props.status) {
+    case true:
+      return 'green';
+    case false:
+      return 'red';
+    default:
+      return '#000';
+  }
+};
 
 export const FriendAvatar = styled.img`
   margin-left: 12px;
