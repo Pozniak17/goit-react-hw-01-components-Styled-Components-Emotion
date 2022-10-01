@@ -9,7 +9,7 @@ import { Fragment } from 'react';
 import Profile from './Profile';
 import Statistics from './Statistics';
 import FriendList from './Friend/FriendList';
-import TransactionHistory from './Transaction/TransactionHistory';
+import TransactionHistory from './TransactionHistory';
 
 export const App = () => {
   return (
