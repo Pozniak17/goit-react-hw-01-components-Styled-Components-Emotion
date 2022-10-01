@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/goit-react-hw-01-components-styled-components-emotion/static/css/main.940af96b.css",
-    "main.js": "/goit-react-hw-01-components-styled-components-emotion/static/js/main.14d86924.js",
+    "main.js": "/goit-react-hw-01-components-styled-components-emotion/static/js/main.700d61a3.js",
     "static/media/profile.jpg": "/goit-react-hw-01-components-styled-components-emotion/static/media/profile.a738d80846263b22f36d.jpg",
     "index.html": "/goit-react-hw-01-components-styled-components-emotion/index.html",
     "main.940af96b.css.map": "/goit-react-hw-01-components-styled-components-emotion/static/css/main.940af96b.css.map",
-    "main.14d86924.js.map": "/goit-react-hw-01-components-styled-components-emotion/static/js/main.14d86924.js.map"
+    "main.700d61a3.js.map": "/goit-react-hw-01-components-styled-components-emotion/static/js/main.700d61a3.js.map"
   },
   "entrypoints": [
     "static/css/main.940af96b.css",
-    "static/js/main.14d86924.js"
+    "static/js/main.700d61a3.js"
   ]
 }
