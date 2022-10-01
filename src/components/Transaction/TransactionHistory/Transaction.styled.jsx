@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 export const TableHistory = styled.table`
-  background-color: white;
+  background-color: ${props => props.theme.colors.white};
   margin: 100px auto;
   width: 400px;
   height: 100%;
@@ -16,7 +16,7 @@ export const TableHead = styled.thead`
 `;
 
 export const TableTitle = styled.th`
-  color: white;
+  color: ${props => props.theme.colors.white};
   padding: 10px;
 `;
 

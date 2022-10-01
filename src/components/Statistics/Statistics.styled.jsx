@@ -10,11 +10,11 @@ export const StatisticsCard = styled.section`
 
 export const CardTitle = styled.h2`
   color: rgb(117, 111, 111);
-  background-color: white;
+  background-color: ${props => props.theme.colors.white};
 
   font-weight: 600;
   text-align: center;
-  padding: 20px 20px;
+  padding: ${props => props.theme.spacing(4)} ${props => props.theme.spacing(4)}; //20px 20px
 `;
 
 export const CardList = styled.ul`
@@ -29,7 +29,7 @@ export const CardItem = styled.li`
   justify-content: center;
   align-items: center;
 
-  padding: 10px 10px;
+  padding: ${props => props.theme.spacing(2)} ${props => props.theme.spacing(2)}; //10px 10px
 
   width: 100%;
 `;

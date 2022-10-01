@@ -4,8 +4,8 @@ export const Item = styled.li`
   display: flex;
 
   height: 60px;
-  background-color: white;
-  margin-bottom: 10px;
+  background-color: ${props => props.theme.colors.white};
+  margin-bottom: ${props => props.theme.spacing(2)};
 
   align-items: center;
   border-radius: 8px;
@@ -17,24 +17,24 @@ export const Item = styled.li`
 `;
 
 export const FriendsStatus = styled.span`
-  margin-left: 15px;
+  margin-left: ${props => props.theme.spacing(3)};
   width: 12px;
   height: 12px;
-  background-color: green;
+  background-color: ${props => props.theme.colors.green};
   border-radius: 12px;
 
   background-color: ${props => setStatusColor};
 `;
 
 // функція зміни кольору
-const setStatusColor = props => {
-  switch (props.status) {
+const setStatusColor = ({ status, theme }) => {
+  switch (status) {
     case true:
-      return 'green';
+      return theme.colors.green;
     case false:
-      return 'red';
+      return theme.colors.red;
     default:
-      return '#000';
+      return theme.colors.black;
   }
 };
 

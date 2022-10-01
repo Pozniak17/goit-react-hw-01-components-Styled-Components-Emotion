@@ -11,7 +11,7 @@ export const Container = styled.div`
 
 export const Wrapper = styled.div`
   border-radius: 12px 12px 0px 0px;
-  background-color: white;
+  background-color: ${props => props.theme.colors.white};
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -24,34 +24,34 @@ export const Image = styled.img`
   width: 200px;
   border-radius: 50%;
 
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: ${props => props.theme.spacing(5)}; //20px
+  margin-bottom: ${props => props.theme.spacing(5)}; //20px
 `;
 
 export const Name = styled.p`
   font-size: 20px;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: ${props => props.theme.spacing(2)}; //10px
 
   text-align: center;
 `;
 
 export const Tag = styled.p`
-  color: #919da9;
+  color: ${props => props.theme.colors.grey};
   font-weight: 500;
-  margin-bottom: 10px;
+  margin-bottom: ${props => props.theme.spacing(2)}; //10px
 `;
 
 export const Location = styled.p`
-  color: #919da9;
+  color: ${props => props.theme.colors.grey};
   font-weight: 500;
-  margin-bottom: 10px;
+  margin-bottom: ${props => props.theme.spacing(2)}; //10px
 `;
 
 export const Label = styled.span`
-  color: #919da9;
+  color: ${props => props.theme.colors.grey};
   font-weight: 500;
-  margin-bottom: 10px;
+  margin-bottom: ${props => props.theme.spacing(2)}; //10px
 `;
 
 export const StatsWrapper = styled.ul`
@@ -68,7 +68,7 @@ export const StatsWrapper = styled.ul`
 `;
 
 export const StatsItem = styled.li`
-  padding: 10px;
+  padding: ${props => props.theme.spacing(2)}; //10px
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
