@@ -7,6 +7,7 @@ import {
   CardTitle,
   CardList,
   CardItem,
+  CardSpan,
 } from './Statistics.styled';
 
 const Statistics = ({ title, stats }) => {
@@ -17,8 +18,8 @@ const Statistics = ({ title, stats }) => {
       <CardList>
         {stats.map(({ id, label, percentage }) => (
           <CardItem key={id} style={{ backgroundColor: getRandomHexColor() }}>
-            <span className="label">{label}</span>
-            <span className="percentage">{percentage + '%'}</span>
+            <CardSpan>{label}</CardSpan>
+            <CardSpan className="percentage">{percentage + '%'}</CardSpan>
           </CardItem>
         ))}
       </CardList>

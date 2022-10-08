@@ -22,7 +22,7 @@ export const Wrapper = styled.div`
 export const Image = styled.img`
   background-color: antiquewhite;
   width: 200px;
-  border-radius: 50%;
+  border-radius: ${props => props.theme.radii.round};
 
   margin-top: ${props => props.theme.spacing(5)}; //20px
   margin-bottom: ${props => props.theme.spacing(5)}; //20px
@@ -30,7 +30,7 @@ export const Image = styled.img`
 
 export const Name = styled.p`
   font-size: 20px;
-  font-weight: 600;
+  font-weight: ${props => props.theme.fontWeights.semiBold};
   margin-bottom: ${props => props.theme.spacing(2)}; //10px
 
   text-align: center;
@@ -38,20 +38,20 @@ export const Name = styled.p`
 
 export const Tag = styled.p`
   color: ${props => props.theme.colors.grey};
-  font-weight: 500;
+  font-weight: ${props => props.theme.fontWeights.medium}; //500
   margin-bottom: ${props => props.theme.spacing(2)}; //10px
 `;
 
 export const Location = styled.p`
   color: ${props => props.theme.colors.grey};
-  font-weight: 500;
+  font-weight: ${props => props.theme.fontWeights.medium}; //500
   margin-bottom: ${props => props.theme.spacing(2)}; //10px
 `;
 
 export const Label = styled.span`
   color: ${props => props.theme.colors.grey};
-  font-weight: 500;
-  margin-bottom: ${props => props.theme.spacing(2)}; //10px
+  font-weight: ${props => props.theme.fontWeights.medium}; //500
+  margin-bottom: ${props => props.theme.spacing(2)}; //
 `;
 
 export const StatsWrapper = styled.ul`
@@ -75,6 +75,6 @@ export const StatsItem = styled.li`
 `;
 
 export const Quantity = styled.span`
-  font-weight: 700;
+  font-weight: ${props => props.theme.fontWeights.bold};
   text-align: center;
 `;

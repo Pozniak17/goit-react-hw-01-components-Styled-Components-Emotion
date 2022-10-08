@@ -4,16 +4,15 @@ import data from '../json/data.json';
 import friends from '../json/friends.json';
 import transaction from '../json/transactions.json';
 
-import { Fragment } from 'react';
-
 import Profile from './Profile';
 import Statistics from './Statistics';
 import FriendList from './Friend/FriendList';
 import TransactionHistory from './TransactionHistory';
+import { Box } from './Box/Box';
 
 export const App = () => {
   return (
-    <Fragment>
+    <Box bg="mainBgColor">
       <Profile
         username={user.username}
         tag={user.tag}
@@ -24,6 +23,6 @@ export const App = () => {
       <Statistics title="Upload stats" stats={data} />
       <FriendList friends={friends} />
       <TransactionHistory items={transaction} />
-    </Fragment>
+    </Box>
   );
 };

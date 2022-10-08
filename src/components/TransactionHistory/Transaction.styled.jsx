@@ -32,4 +32,10 @@ export const TableRow = styled.tr`
   :nth-of-type(even) {
     background-color: #ecf1f3;
   }
+
+  cursor: pointer;
+
+  :hover {
+    background-color: orange;
+  }
 `;

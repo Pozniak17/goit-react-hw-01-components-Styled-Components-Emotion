@@ -12,7 +12,7 @@ export const CardTitle = styled.h2`
   color: rgb(117, 111, 111);
   background-color: ${props => props.theme.colors.white};
 
-  font-weight: 600;
+  font-weight: ${props => props.theme.fontWeights.semiBold};
   text-align: center;
   padding: ${props => props.theme.spacing(4)} ${props => props.theme.spacing(4)}; //20px 20px
 `;
@@ -32,4 +32,8 @@ export const CardItem = styled.li`
   padding: ${props => props.theme.spacing(2)} ${props => props.theme.spacing(2)}; //10px 10px
 
   width: 100%;
+`;
+
+export const CardSpan = styled.span`
+  font-weight: ${props => props.theme.fontWeights.semiBold};
 `;

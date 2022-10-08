@@ -14,6 +14,12 @@ export const Item = styled.li`
   &:last-child {
     margin-bottom: 0;
   }
+
+  cursor: pointer;
+
+  :hover {
+    background-color: orange;
+  }
 `;
 
 export const FriendsStatus = styled.span`
@@ -45,5 +51,5 @@ export const FriendAvatar = styled.img`
 
 export const FriendName = styled.p`
   margin-left: 12px;
-  font-weight: 600;
+  font-weight: ${props => props.theme.fontWeights.semiBold};
 `;
