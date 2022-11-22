@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom/client';
 import { App } from 'components/App';
 import './index.css';
 
-import { theme } from 'components/utils/constants/theme';
+import { theme } from 'components/utils/Theme/theme';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

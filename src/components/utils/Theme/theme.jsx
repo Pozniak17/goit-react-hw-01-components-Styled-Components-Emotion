@@ -12,7 +12,8 @@ export const theme = {
     accent: '#609',
     muted: '#f6f6f6',
   },
-  space: [0, 2, 4, 8, 16, 32, 64, 128, 256],
+  space: [0, 2, 4, 8, 16, 32, 64, 100, 128, 256],
+  sizes: [100, 300, 400],
   fonts: {
     body: 'system-ui, sans-serif',
     heading: 'system-ui, sans-serif',
@@ -45,4 +46,8 @@ export const theme = {
   }, // це для margin, padding
   // spacing: 4,
   spacing: value => `${5 * value}px`,
+
+  shadows: {
+    standart: '10px 10px 8px 2px rgba(0, 0, 0, 0.3)',
+  },
 };

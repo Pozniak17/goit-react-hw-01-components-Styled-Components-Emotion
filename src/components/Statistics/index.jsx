@@ -1,18 +1,13 @@
+import { Box } from 'components/Box/Box';
 import PropTypes from 'prop-types';
 
-import getRandomHexColor from '../utils/RandomColors';
+import getRandomHexColor from '../utils/RandomColors/RandomColors';
 // import style from './style.module.css';
-import {
-  StatisticsCard,
-  CardTitle,
-  CardList,
-  CardItem,
-  CardSpan,
-} from './Statistics.styled';
+import { CardTitle, CardList, CardItem, CardSpan } from './Statistics.styled';
 
 const Statistics = ({ title, stats }) => {
   return (
-    <StatisticsCard>
+    <Box margin="100px auto" width={1} height="100%" boxShadow="standart">
       {title && <CardTitle>{title.toUpperCase()}</CardTitle>}
 
       <CardList>
@@ -23,7 +18,7 @@ const Statistics = ({ title, stats }) => {
           </CardItem>
         ))}
       </CardList>
-    </StatisticsCard>
+    </Box>
   );
 };
 

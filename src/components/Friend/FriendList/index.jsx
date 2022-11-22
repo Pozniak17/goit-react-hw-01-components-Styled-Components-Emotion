@@ -1,12 +1,13 @@
 // import style from './style.module.css';
+import { Box } from 'components/Box/Box';
 import PropTypes from 'prop-types';
 
 import FriendListItem from '../FriendListItem';
-import { List } from './FriendList.styled';
+// import { List } from './FriendList.styled';
 
 const FriendList = ({ friends }) => {
   return (
-    <List>
+    <Box margin="100px auto" width="220px">
       {friends.map(({ id, isOnline, avatar, name }) => (
         <FriendListItem
           key={id}
@@ -15,7 +16,7 @@ const FriendList = ({ friends }) => {
           name={name}
         />
       ))}
-    </List>
+    </Box>
   );
 };
 

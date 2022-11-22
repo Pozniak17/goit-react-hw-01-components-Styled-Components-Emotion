@@ -1,15 +1,15 @@
 import styled from '@emotion/styled';
 
-export const TableHistory = styled.table`
-  background-color: ${props => props.theme.colors.white};
-  margin: 100px auto;
-  width: 400px;
-  height: 100%;
+// export const TableHistory = styled.table`
+//   background-color: ${props => props.theme.colors.white};
+//   margin: 100px auto;
+//   width: 400px;
+//   height: 100%;
 
-  align-items: center;
+//   align-items: center;
 
-  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.3);
-`;
+//   box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.3);
+// `;
 
 export const TableHead = styled.thead`
   background-color: #00bcd5;

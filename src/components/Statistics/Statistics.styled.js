@@ -1,13 +1,5 @@
 import styled from '@emotion/styled';
 
-export const StatisticsCard = styled.section`
-  margin: 100px auto;
-  width: 300px;
-  height: 100%;
-
-  box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.3);
-`;
-
 export const CardTitle = styled.h2`
   color: rgb(117, 111, 111);
   background-color: ${props => props.theme.colors.white};

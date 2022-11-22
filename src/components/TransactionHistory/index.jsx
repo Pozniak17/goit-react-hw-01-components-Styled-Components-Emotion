@@ -1,7 +1,8 @@
+import { Box } from 'components/Box/Box';
 import PropTypes from 'prop-types';
 
 import {
-  TableHistory,
+  // TableHistory,
   TableHead,
   TableTitle,
   TableData,
@@ -10,7 +11,15 @@ import {
 
 const TransactionHistory = ({ items }) => {
   return (
-    <TableHistory>
+    <Box
+      bg="white"
+      margin="100px auto"
+      max-width="100%" // тут 400px
+      height="100%"
+      alignItems="center"
+      boxShadow="standart"
+      as="table"
+    >
       <TableHead>
         <TableRow>
           <TableTitle>Type</TableTitle>
@@ -27,7 +36,7 @@ const TransactionHistory = ({ items }) => {
           </TableRow>
         ))}
       </tbody>
-    </TableHistory>
+    </Box>
   );
 };
 

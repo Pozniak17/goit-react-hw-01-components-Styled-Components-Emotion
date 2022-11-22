@@ -1,8 +1,9 @@
+import { Box } from 'components/Box/Box';
 import PropTypes from 'prop-types';
 import profileAvatar from '../utils/images/profile.jpg';
 
 import {
-  Container,
+  // Container,
   Wrapper,
   Image,
   Name,
@@ -22,7 +23,13 @@ const Profile = ({
   stats: { followers, views, likes },
 }) => {
   return (
-    <Container>
+    <Box
+      margin="100px auto"
+      width={1}
+      height={2}
+      borderRadius="12px"
+      boxShadow="standart"
+    >
       <Wrapper>
         <Image src={avatar} alt="User avatar" />
         <Name>{username}</Name>
@@ -44,7 +51,7 @@ const Profile = ({
           <Quantity>{likes}</Quantity>
         </StatsItem>
       </StatsWrapper>
-    </Container>
+    </Box>
   );
 };
 
